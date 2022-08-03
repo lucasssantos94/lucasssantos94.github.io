@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+
+    <title>Tratativa de ordens</title>
+</head>
+
+<body>
+
+    <section class="container">
+
+        <h1 class="title">Trativa de Ordens</h1>
+
+        <form action="" class="form" method="get" name="crom">
+            <fieldset>
+
+                <input list="listaMotos" type="text" name="moto" placeholder="Digite o Código do moto" required>
+
+                <datalist id="listaMotos">
+
+                    <option value="mc011"></option>
+                    <option value="mc012"></option>
+                    <option value="mc013"></option>
+                    <option value="mc014"></option>
+                    <option value="mc015"></option>
+                    <option value="mc016"></option>
+                    <option value="mc017"></option>
+                    <option value="mc018"></option>
+                    <option value="mc019"></option>
+                    <option value="mc020"></option>
+
+                    <option value="md011"></option>
+                    <option value="md012"></option>
+                    <option value="md013"></option>
+                    <option value="md014"></option>
+                    <option value="md015"></option>
+                    <option value="md016"></option>
+                    <option value="mc017"></option>
+                    <option value="md018"></option>
+                    <option value="md019"></option>
+                    <option value="md020"></option>
+
+                    <option value="mg011"></option>
+                    <option value="mg012"></option>
+                    <option value="mg013"></option>
+                    <option value="mg014"></option>
+                    <option value="mg015"></option>
+                    <option value="mg016"></option>
+                    <option value="mg017"></option>
+                    <option value="mg018"></option>
+                    <option value="mg019"></option>
+                    <option value="mg020"></option>
+
+                    <option value="mi011"></option>
+                    <option value="mi012"></option>
+                    <option value="mi013"></option>
+                    <option value="mi014"></option>
+                    <option value="mi015"></option>
+                    <option value="mi016"></option>
+                    <option value="mi017"></option>
+                    <option value="mi018"></option>
+                    <option value="mi019"></option>
+                    <option value="mi020"></option>
+
+                    <option value="mm011"></option>
+                    <option value="mm012"></option>
+                    <option value="mm013"></option>
+                    <option value="mm014"></option>
+                    <option value="mm015"></option>
+                    <option value="mm016"></option>
+                    <option value="mm017"></option>
+                    <option value="mm018"></option>
+                    <option value="mm019"></option>
+                    <option value="mm020"></option>
+
+
+                </datalist>
+
+
+                <select name="fp" id="" onchange="displayInput()" required>
+                    <option value="">selecione</option>
+                    <option value="fp001">#fp001</option>
+                    <option value="fp002">#fp002</option>
+                    <option value="fp003">#fp003</option>
+                    <option value="fp004">#fp004</option>
+                    <option value="religação">religação</option>
+                    <option value="defeito interno">defeito interno</option>
+                    <option value="area de risco">area de risco</option>
+                    <option value="estrada de terra">estrada de terra</option>
+                </select>
+
+
+                <select name="cabo" required>
+                    <option value="" selected>selecione</option>
+                    <optgroup label="ORDEM COM RISCO" id="risco">
+                        <option>ramal</option>
+                        <option>secundario</option>
+                        <option>primário</option>
+                        <option>ip</option>
+                        <option>poste abalroado</option>
+                        <option>cruzeta danificada</option>
+
+                    </optgroup>
+
+                    <optgroup label="ORDEM SEM RISCO" id="semRisco">
+                        <option>ramal</option>
+                        <option>secundario</option>
+                        <option>primário</option>
+                        <option>medidor em curto</option>
+                        <option>bf atuada</option>
+                        <option>ramal barrigado</option>
+                        <option>ramal em curto</option>
+                        <option>rede em curto</option>
+                        <option>poste abalroado sem risco</option>
+                        <option>cruzeta danificada sem risco</option>
+                    </optgroup>
+
+                    <optgroup label="OUTRAS REDE" id="outraRede">
+                        <option>telefonia</option>
+                        <option>ip</option>
+                    </optgroup>
+
+                </select>
+
+                <button>Gerar</button>
+
+                <textarea name="result" id="" cols="30" rows="5"></textarea>
+
+                <button id="copy" class="popup">Copiar texto <span class="popuptext" id="myPopup">texto copiado</span></button>
+
+            </fieldset>
+
+        </form>
+
+    </section>
+
+</body>
+
+</html>
