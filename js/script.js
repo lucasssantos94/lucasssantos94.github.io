@@ -138,7 +138,7 @@ form.addEventListener("submit", (e) => {
       break;
 
     case "estrada de terra":
-      result.value = `${moto.value} informa estrada de terra sem possibilidade de prosseguir, necessário equie para averiguação.`;
+      result.value = `${moto.value} informa estrada de terra sem possibilidade de prosseguir, necessário equipe para averiguação.`;
   }
 
   // exibe o botão copiar após o texto ser gerado
